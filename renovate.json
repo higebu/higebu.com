@@ -8,5 +8,8 @@
   "postUpdateOptions": [
     "gomodTidy"
   ],
-  "prConcurrentLimit": 1
+  "prConcurrentLimit": 1,
+  "baseBranches": [
+    "source"
+  ]
 }
