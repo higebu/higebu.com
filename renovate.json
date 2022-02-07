@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base",
+    "automergeAll"
+  ],
+  "postUpdateOptions": [
+    "gomodTidy"
+  ],
+  "prConcurrentLimit": 1
+}
