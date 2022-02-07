@@ -1,4 +1,4 @@
-module github.com/higebu/higebu.github.io
+module github.com/higebu/higebu.com
 
 go 1.17
 
