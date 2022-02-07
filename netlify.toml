@@ -1,27 +1,27 @@
 [build]
 publish = "public"
-command = "./prepare.sh && ./build.sh"
+command = "./prepare.sh && $HUGO --gc --minify"
 
 [build.environment]
 GO_VERSION = "1.17.6"
 GO_IMPORT_PATH = "github.com/higebu/higebu.github.io"
+HUGO = "$GOPATH/bin/hugo"
 
 [context.production.environment]
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "hugo --gc --minify --enableGitInfo"
+command = "$HUGO --gc --minify --enableGitInfo"
 
 [context.split1.environment]
-HUGO_VERSION = "0.62.0"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "$HUGO --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "$HUGO --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
