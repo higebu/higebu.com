@@ -3,6 +3,7 @@ publish = "public"
 command = "./prepare.sh && ./build.sh"
 
 [build.environment]
+GO_VERSION = "1.17.6"
 GO_IMPORT_PATH = "github.com/higebu/higebu.github.io"
 
 [context.production.environment]
