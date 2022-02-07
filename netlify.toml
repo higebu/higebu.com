@@ -5,7 +5,7 @@ command = "./prepare.sh && $HUGO --gc --minify"
 [build.environment]
 GO_VERSION = "1.17.6"
 GO_IMPORT_PATH = "github.com/higebu/higebu.com"
-HUGO = "${PWD}/bin/hugo"
+HUGO = "/opt/build/repo/bin/hugo"
 
 [context.production.environment]
 HUGO_ENV = "production"
