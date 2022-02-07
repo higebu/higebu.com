@@ -1,3 +1,3 @@
 #!/bin/bash
 
-go install --tags extended github.com/gohugoio/hugo
+GOBIN=${PWD}/bin go install --tags extended github.com/gohugoio/hugo

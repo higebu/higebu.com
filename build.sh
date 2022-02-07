@@ -1,3 +1,3 @@
 #!/bin/bash
 
-hugo --gc --minify
+./bin/hugo --gc --minify
