@@ -1,5 +1,5 @@
 ---
-title: "XDP の meta data が VLAN のパケットのときに失われるバグを修正して Linux Kernel に貢献した"
+title: "XDP metadata が VLAN パケットのときに失われるバグを修正した"
 slug: fix-missing-xdp-meta-data-in-skb-with-vlan-packet
 date: 2019-05-06T14:30:00Z
 categories: 
@@ -13,7 +13,7 @@ tags:
 ---
 
 
-## パッチについて
+## パッチ
 
 パッチは [こちら][1] で、stable では [4.19.37][2] か [5.0.10][3] からこの修正が入っています。
 
