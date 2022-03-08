@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.17
 
-require github.com/gohugoio/hugo v0.93.2
+require github.com/gohugoio/hugo v0.93.3
 
 require (
 	cloud.google.com/go v0.100.2 // indirect
@@ -82,7 +82,7 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/tdewolff/minify/v2 v2.10.0 // indirect
 	github.com/tdewolff/parse/v2 v2.5.27 // indirect
-	github.com/yuin/goldmark v1.4.7 // indirect
+	github.com/yuin/goldmark v1.4.8 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	gocloud.dev v0.20.0 // indirect
