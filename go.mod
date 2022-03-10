@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.17
 
-require github.com/gohugoio/hugo v0.93.3
+require github.com/gohugoio/hugo v0.94.0
 
 require (
 	cloud.google.com/go v0.100.2 // indirect
@@ -30,10 +30,10 @@ require (
 	github.com/disintegration/gift v1.2.1 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
-	github.com/evanw/esbuild v0.14.23 // indirect
+	github.com/evanw/esbuild v0.14.25 // indirect
 	github.com/frankban/quicktest v1.14.2 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
-	github.com/getkin/kin-openapi v0.90.0 // indirect
+	github.com/getkin/kin-openapi v0.91.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
 	github.com/go-openapi/swag v0.19.5 // indirect
@@ -56,7 +56,7 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
-	github.com/kyokomi/emoji/v2 v2.2.8 // indirect
+	github.com/kyokomi/emoji/v2 v2.2.9 // indirect
 	github.com/magefile/mage v1.12.1 // indirect
 	github.com/mailru/easyjson v0.0.0-20190626092158-b2ccc519800e // indirect
 	github.com/mattn/go-ieproxy v0.0.1 // indirect
@@ -65,7 +65,7 @@ require (
 	github.com/mitchellh/hashstructure v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/muesli/smartcrop v0.3.0 // indirect
-	github.com/niklasfasching/go-org v1.6.0 // indirect
+	github.com/niklasfasching/go-org v1.6.2 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.0-beta.6 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
