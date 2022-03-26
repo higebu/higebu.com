@@ -3,7 +3,7 @@ publish = "public"
 command = "./prepare.sh && $HUGO --gc --minify"
 
 [build.environment]
-GO_VERSION = "1.17.6"
+GO_VERSION = "1.18"
 GO_IMPORT_PATH = "github.com/higebu/higebu.com"
 HUGO = "/opt/build/repo/bin/hugo"
 
