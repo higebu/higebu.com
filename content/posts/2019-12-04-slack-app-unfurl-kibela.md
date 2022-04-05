@@ -42,7 +42,9 @@ tags:
 
 ※後で戻ってくるので、Slack Appの管理画面は開いたままにしておきます。
 
-# herokuにslack-app-unfurl-kibelaをデプロイ
+# slack-app-unfurl-kibelaをデプロイ
+
+## Herokuにデプロイ
 
 下記のボタンからデプロイできます。
 
@@ -51,6 +53,48 @@ tags:
 `App name` に入れた名前がURLになります。具体的には `https://{app name}.herokuapp.com/` のようになります。
 
 `KIBELA_TEAM` にはKibelaのチーム名、 `KIBELA_TOKEN` にKibelaのアクセストークン、 `SLACK_TOKEN` にSlackのOAuth Access Tokenを入力し、 `Deploy App` ボタンを入力してください。
+
+## GCPのCloud Runにデプロイ
+
+```shell
+KIBELA_TEAM=xxxxxx
+KIBELA_TOKEN=xxxxxx
+SLACK_TOKEN=xxxxxx
+PROJECT_ID=xxxxxx
+REPO=docker-repo
+IMAGE=slack-app-unfurl-kibela
+
+git clone https://github.com/higebu/slack-app-unfurl-kibela.git
+cd slack-app-unfurl-kibela
+
+gcloud projects create $PROJECT_ID
+gcloud config set project $PROJECT_ID
+echo "$KIBELA_TEAM" | gcloud secrets create KIBELA_TEAM --data-file -
+echo "$KIBELA_TOKEN" | gcloud secrets create KIBELA_TOKEN --data-file -
+echo "$SLACK_TOKEN" | gcloud secrets create SLACK_TOKEN --data-file -
+
+gcloud artifacts repositories create docker-repo \
+    --repository-format=docker \
+    --location asia-northeast1
+
+gcloud builds submit \
+    --config=cloudbuild.yaml \
+    --substitutions=_REPOSITORY="$REPO",_IMAGE="$IMAGE" .
+```
+
+リポジトリの更新時に自動でデプロイするためにトリガーの設定をします。
+※フォークしたリポジトリを使う必要があります。
+
+```shell
+OWNER=xxxxxx
+gcloud beta builds triggers create github \
+    --name=trigger-slack-unfurl-kibela \
+    --repo-name=slack-app-unfurl-kibela \
+    --repo-owner=$OWNER \
+    --branch-pattern='^master$' \
+    --build-config=cloudbuild.yaml \
+    --substitutions=_REPOSITORY="$REPO",_IMAGE="$IMAGE"
+```
 
 # Slack AppにURLを登録
 
