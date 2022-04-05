@@ -1,15 +1,8 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    ":dependencyDashboard",
-    ":automergeAll",
-    ":semanticCommits",
-    ":semanticPrefixChore"
+    "local>higebu/renovate-config"
   ],
-  "postUpdateOptions": [
-    "gomodTidy"
-  ],
-  "prConcurrentLimit": 1,
   "baseBranches": [
     "source"
   ]
