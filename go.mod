@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.17
 
-require github.com/gohugoio/hugo v0.97.2
+require github.com/gohugoio/hugo v0.97.3
 
 require (
 	cloud.google.com/go v0.100.2 // indirect
@@ -46,7 +46,7 @@ require (
 	github.com/bep/godartsass v0.14.0 // indirect
 	github.com/bep/golibsass v1.0.0 // indirect
 	github.com/bep/gowebp v0.1.0 // indirect
-	github.com/bep/overlayfs v0.5.0 // indirect
+	github.com/bep/overlayfs v0.6.0 // indirect
 	github.com/bep/tmc v0.5.1 // indirect
 	github.com/clbanning/mxj/v2 v2.5.5 // indirect
 	github.com/cli/safeexec v1.0.0 // indirect
