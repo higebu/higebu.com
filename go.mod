@@ -1,6 +1,6 @@
 module github.com/higebu/higebu.com
 
-go 1.17
+go 1.18
 
 require github.com/gohugoio/hugo v0.97.3
 
