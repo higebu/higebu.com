@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.18
 
-require github.com/gohugoio/hugo v0.100.1
+require github.com/gohugoio/hugo v0.100.2
 
 require (
 	cloud.google.com/go v0.101.0 // indirect
@@ -93,7 +93,7 @@ require (
 	github.com/muesli/smartcrop v0.3.0 // indirect
 	github.com/niklasfasching/go-org v1.6.2 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
-	github.com/pelletier/go-toml/v2 v2.0.0-beta.7.0.20220408132554-2377ac4bc04c // indirect
+	github.com/pelletier/go-toml/v2 v2.0.1 // indirect
 	github.com/rogpeppe/go-internal v1.8.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd // indirect
