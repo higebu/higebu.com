@@ -3,10 +3,10 @@ title: "妻と0歳の娘がいるエンジニアの生活"
 slug: life-of-engineer-with-wife-and-0-years-old-daughter
 date: 2016-12-14T22:12:00Z
 categories: 
-- "Life"
+- 子育て
 tags: 
-- "life"
-- "engineer"
+- 子育て
+- エンジニア
 ---
 
 
