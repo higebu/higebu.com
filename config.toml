@@ -9,7 +9,7 @@ enableEmoji = true
 disqusShortname = "higeblog"
 googleAnalytics = "UA-18631726-1"
 enableRobotsTXT = true
-copyright = "&copy; <a href=\"https://github.com/higebu\">Yuya Kusakabe</a> 2011-2019"
+copyright = "&copy; <a href=\"https://github.com/higebu\">Yuya Kusakabe</a> 2011-2022"
 
 [languages]
   [languages.ja]
