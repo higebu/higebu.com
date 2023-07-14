@@ -5,5 +5,8 @@
   ],
   "baseBranches": [
     "source"
-  ]
+  ],
+  "git-submodules": {
+    "enabled": true
+  }
 }
