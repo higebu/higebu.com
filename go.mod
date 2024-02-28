@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.19
 
-require github.com/gohugoio/hugo v0.123.4
+require github.com/gohugoio/hugo v0.123.6
 
 require (
 	cloud.google.com/go v0.110.10 // indirect
@@ -52,7 +52,7 @@ require (
 	github.com/bep/lazycache v0.4.0 // indirect
 	github.com/bep/logg v0.4.0 // indirect
 	github.com/bep/mclib v1.20400.20402 // indirect
-	github.com/bep/overlayfs v0.9.1 // indirect
+	github.com/bep/overlayfs v0.9.2 // indirect
 	github.com/bep/simplecobra v0.4.0 // indirect
 	github.com/bep/tmc v0.5.1 // indirect
 	github.com/clbanning/mxj/v2 v2.7.0 // indirect
