@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.19
 
-require github.com/gohugoio/hugo v0.125.3
+require github.com/gohugoio/hugo v0.125.4
 
 require (
 	cloud.google.com/go v0.110.10 // indirect
@@ -122,8 +122,8 @@ require (
 	github.com/spf13/cobra v1.8.0 // indirect
 	github.com/spf13/fsync v0.10.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/tdewolff/minify/v2 v2.20.19 // indirect
-	github.com/tdewolff/parse/v2 v2.7.12 // indirect
+	github.com/tdewolff/minify/v2 v2.20.20 // indirect
+	github.com/tdewolff/parse/v2 v2.7.13 // indirect
 	github.com/yuin/goldmark v1.7.1 // indirect
 	github.com/yuin/goldmark-emoji v1.0.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
