@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.19
 
-require github.com/gohugoio/hugo v0.125.5
+require github.com/gohugoio/hugo v0.125.6
 
 require (
 	cloud.google.com/go v0.110.10 // indirect
@@ -110,7 +110,7 @@ require (
 	github.com/niklasfasching/go-org v1.7.0 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
-	github.com/pelletier/go-toml/v2 v2.2.1 // indirect
+	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
 	github.com/perimeterx/marshmallow v1.1.5 // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
