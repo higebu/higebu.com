@@ -2,7 +2,7 @@ module github.com/higebu/higebu.com
 
 go 1.19
 
-require github.com/gohugoio/hugo v0.125.6
+require github.com/gohugoio/hugo v0.125.7
 
 require (
 	cloud.google.com/go v0.110.10 // indirect
